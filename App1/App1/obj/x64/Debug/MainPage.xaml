@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:charts="using:CrossPieCharts.UWP.PieCharts">
+
+    <Grid Background="Azure">
+        <TextBlock x:ConnectionId='1' x:Name="ResultTextBlock" HorizontalAlignment="Left" Margin="85,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="auto" FontSize="25"/>
+        <ListView x:ConnectionId='2' x:Name="CryptocurrencyListView" HorizontalAlignment="Left" Height="auto" Margin="30,120,0,0" VerticalAlignment="Top" Width="auto"/>
+        <!--<charts:RichPieChart Radius="120" StrokeThickness="50"
+                             Margin="80,80,0,0"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             PieChartArgsCollection="{Binding PieChartCollection}">
+            <charts:RichPieChart.DataContext>
+                <local:MainPage/>
+            </charts:RichPieChart.DataContext>
+        </charts:RichPieChart>-->
+        <Button x:ConnectionId='3' Content="REFRESH" Background="LightGray" Height="60" Width="200"                      Margin="163,630,0,0" />
+    </Grid>
+</Page>
+
